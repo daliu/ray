@@ -360,7 +360,7 @@ def run(
             ``tune.register_trainable("lambda_id", lambda x: ...)``. You can
             then use ``tune.run("lambda_id")``.
         metric: Metric to optimize. This metric should be reported
-            with `tune.report()`. If set, will be passed to the search
+            with `train.report()`. If set, will be passed to the search
             algorithm and scheduler.
         mode: Must be one of [min, max]. Determines whether objective is
             minimizing or maximizing the metric attribute. If set, will be
